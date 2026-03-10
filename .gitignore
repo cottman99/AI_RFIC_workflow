@@ -24,6 +24,7 @@ Data_process/HDF5_create/hdf5_data/
 
 # Private working notes
 _local_notes/
+.vscode/
 
 # Local environment files
 .env
