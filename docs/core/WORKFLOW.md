@@ -25,6 +25,17 @@ Each layout JSON contains:
 - per-layer binary matrices
 - port definitions
 
+Why this stage matters:
+
+- it is the upstream source of layout samples for the entire repository
+- the ADS automation stage consumes these JSON files directly
+- the dataset construction stage later reuses the same JSON files when aligning layouts with `.sNp` results
+
+Important usage note:
+
+- for first-time quickstart validation, this stage can be skipped by using the sample JSON files already included under `parallel_version/config_examples/json_layout/`
+- for actual data generation campaigns, this stage is essential
+
 ## Stage 2: Build ADS Designs
 
 Input:

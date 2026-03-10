@@ -64,6 +64,26 @@ The recommended public execution line is:
 
 `serial_version/` should be treated as legacy/reference material only.
 
+## Role Of Layout JSON Generation
+
+`Data_process/JSON_layout_create/` is the upstream layout-template generation stage of the repository.
+
+It is responsible for turning pixelized RFIC layouts into structured JSON inputs that are later consumed by:
+
+- `parallel_version/` for ADS / RFPro automation
+- `Data_process/HDF5_create/` for dataset construction
+
+In practical terms, the layout generator and its GUI tools let a user:
+
+- define multi-layer pixel matrices
+- place ports on layout borders
+- save or batch-export reusable layout JSON files
+- create randomized layout variants for data generation
+
+For first-time quickstart users, this stage is optional because the repository already includes sample JSON inputs under `parallel_version/config_examples/json_layout/`.
+
+For real dataset production and long-term use, this stage is essential because it is the source of the layout templates that drive the rest of the workflow.
+
 ## Runtime Model
 
 This repository uses two different Python contexts.

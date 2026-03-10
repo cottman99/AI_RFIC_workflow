@@ -26,10 +26,16 @@ Responsibilities:
 - Manage multi-layer binary matrices
 - Define ports on layout borders
 - Export design descriptions as JSON
+- Generate randomized layout variants for simulation data production
 
 Recommended launcher:
 
 - `Data_process/JSON_layout_create/layout_generator_main.py`
+
+Repository role:
+
+- this is the upstream producer of the layout JSON assets consumed by the ADS automation flow
+- it is optional for first-time quickstart users only because sample JSON files are already included
 
 ### ADS / RFPro Automation
 
