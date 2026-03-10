@@ -1,0 +1,31 @@
+.claude/
+CLAUDE.md
+__pycache__/
+*/__pycache__/
+tmp/
+*.log
+
+# ADS / RFPro runtime outputs
+de_sim.cfg
+hpeesofsim.cfg
+parallel_version/batch_results/
+parallel_version/batch_workspace/
+parallel_version/de_sim.cfg
+parallel_version/hpeesofsim.cfg
+Data_process/JSON_layout_create/tmp/
+serial_version/batch_logs/
+serial_version/batch_workflow/
+serial_version/design_*.json
+
+# Local training assets
+Pytorch_Model/models/
+Pytorch_Model/data/
+Data_process/HDF5_create/hdf5_data/
+
+# Private working notes
+_local_notes/
+
+# Local environment files
+.env
+.env.local
+.env.*.local

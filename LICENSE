@@ -1,0 +1,51 @@
+AI_RFIC_workflow uses a mixed noncommercial licensing model.
+
+1. Source code and scripts
+
+Unless otherwise noted, source code and scripts in this repository are licensed under:
+
+PolyForm Noncommercial License 1.0.0
+
+See:
+
+- LICENSES/POLYFORM-NONCOMMERCIAL-1.0.0.txt
+- https://polyformproject.org/licenses/noncommercial/1.0.0/
+
+This permits public research, personal study, educational use, and other noncommercial use.
+Commercial use requires a separate license from the repository owner.
+
+2. Documentation and non-software materials
+
+Unless otherwise noted, repository documentation and non-software materials are licensed under:
+
+Creative Commons Attribution-NonCommercial 4.0 International
+
+See:
+
+- LICENSES/CC-BY-NC-4.0.txt
+- https://creativecommons.org/licenses/by-nc/4.0/
+
+This includes, for example:
+
+- markdown documentation
+- architectural notes
+- configuration examples
+- example JSON layout assets, unless marked otherwise
+
+3. Code examples inside documentation
+
+Code snippets embedded in documentation are licensed under the same license as the repository source code:
+
+PolyForm Noncommercial License 1.0.0
+
+4. Third-party materials
+
+Any third-party materials included in this repository remain under their own licenses.
+
+5. Commercial licensing
+
+If you want to use this repository or derived software for commercial purposes, obtain a separate commercial license from the repository owner.
+
+6. Important note
+
+Because this repository includes noncommercial restrictions, it is source-available but not open source in the OSI-approved sense.

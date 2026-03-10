@@ -1,0 +1,46 @@
+Creative Commons Attribution-NonCommercial 4.0 International
+
+Creative Commons Corporation ("Creative Commons") is not a law firm and does not provide legal services or legal advice. Distribution of Creative Commons public licenses does not create a lawyer-client or other relationship. Creative Commons makes its licenses and related information available on an "as-is" basis. Creative Commons gives no warranties regarding its licenses, any material licensed under their terms and conditions, or any related information. Creative Commons disclaims all liability for damages resulting from their use to the fullest extent possible.
+
+Using Creative Commons Public Licenses
+
+Creative Commons public licenses provide a standard set of terms and conditions that creators and other rights holders may use to share original works of authorship and other material subject to copyright and certain other rights specified in the public license below.
+
+Creative Commons Attribution-NonCommercial 4.0 International Public License
+
+By exercising the Licensed Rights, you accept and agree to be bound by the terms and conditions of this Creative Commons Attribution-NonCommercial 4.0 International Public License.
+
+License grant summary
+
+Subject to the terms and conditions of this Public License, the Licensor grants you a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license to:
+
+- reproduce and share the licensed material, in whole or in part, for noncommercial purposes only
+- produce, reproduce, and share adapted material for noncommercial purposes only
+
+Definition of NonCommercial
+
+NonCommercial means not primarily intended for or directed towards commercial advantage or monetary compensation.
+
+Attribution condition summary
+
+If you share the licensed material, including modified material, you must:
+
+- retain attribution information if supplied
+- retain a copyright notice
+- retain a notice referring to this Public License
+- indicate if you modified the material
+- include the text of, or a URI or hyperlink to, this Public License
+
+Other rights
+
+Patent and trademark rights are not licensed under this Public License.
+
+Disclaimer
+
+Unless otherwise separately undertaken by the licensor, the licensed material is offered as-is and as-available, without warranties or conditions of any kind, to the extent possible.
+
+Official source:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+Official legal code text:
+https://creativecommons.org/licenses/by-nc/4.0/legalcode.txt

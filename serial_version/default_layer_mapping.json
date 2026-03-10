@@ -1,0 +1,14 @@
+{
+  "M1": {
+    "layer_name": "M1",
+    "layer_purpose": "drawing"
+  },
+  "M2": {
+    "layer_name": "M2",
+    "layer_purpose": "drawing"
+  },
+  "M3": {
+    "layer_name": "M3",
+    "layer_purpose": "drawing"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "workspace_dir": "../batch_workspace",
+  "library_name": "Batch_Lib",
+  "ref_library_name": "DemoKit_Non_Linear_tech",
+  "designs_dir": "./json_layout",
+  "output_dir": "../batch_results",
+  "pdk_config": {
+    "use_pdk": true,
+    "pdk_dir": "path/to/pdk",
+    "pdk_tech_dir": "path/to/pdk_tech"
+  },
+  "substrate": "demo",
+  "layer_mapping_file": "./layer_mapping.json",
+  "export_config": {
+    "export_path": "../batch_results",
+    "export_touchstone": true,
+    "export_dataset": false,
+    "export_csv": false
+  },
+  "frequency_config_file": "./frequency_config.json",
+  "execution_config": {
+    "max_workers": 2,
+    "batch_size": 2,
+    "retry_failed": true,
+    "max_retries": 2
+  }
+}

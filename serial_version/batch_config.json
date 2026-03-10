@@ -1,0 +1,16 @@
+{
+  "json_dir": "./batch_workflow/json_layout",
+  "workspace_root": "./batch_workflow/batch_workspace",
+  "library_name": "Batch_EM_Lib",
+  "use_pdk": true,
+  "pdk_loc": "path/to/pdk",
+  "pdk_tech_loc": "path/to/pdk_tech",
+  "substrate": "demo",
+  "layer_mapping": "./default_layer_mapping.json",
+  "export_types": ["touchstone", "csv", "dataset"],
+  "export_path": "./batch_workflow/batch_results",
+  "max_workers": 1,
+  "timeout": 3600,
+  "retry_failed": true,
+  "retry_count": 2
+}

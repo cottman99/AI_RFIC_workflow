@@ -1,0 +1,43 @@
+{
+  "global_frequency_plan_type": "Interpolating_AllFields",
+  "near_fields_save_for": "AsDefinedByFrequencyPlans", 
+  "far_fields_save_for": "AsDefinedByFrequencyPlans",
+  "far_field_angular_resolution": "5 deg",
+  "adaptive_fp_max_samples": 200,
+  "adaptive_fp_save_fields_for": "AllFrequencies",
+  "frequency_plans": [
+    {
+      "compute_type": "Simulated",
+      "sweep_type": "Adaptive",
+      "near_field_type": "NoNearFields",
+      "far_field_type": "NoFarFields", 
+      "start_frequency": "0 Hz",
+      "stop_frequency": "6 GHz",
+      "number_of_points": 201,
+      "sample_points_limit": 300,
+      "points_per_decade": 5
+    },
+    {
+      "compute_type": "Simulated", 
+      "sweep_type": "Single",
+      "near_field_type": "NoNearFields",
+      "far_field_type": "NoFarFields",
+      "start_frequency": "8 GHz",
+      "stop_frequency": "8 GHz",
+      "number_of_points": 1,
+      "sample_points_limit": 1,
+      "points_per_decade": 1
+    },
+    {
+      "compute_type": "Simulated",
+      "sweep_type": "Single", 
+      "near_field_type": "NoNearFields",
+      "far_field_type": "NoFarFields",
+      "start_frequency": "9 GHz",
+      "stop_frequency": "9 GHz",
+      "number_of_points": 1,
+      "sample_points_limit": 1,
+      "points_per_decade": 1
+    }
+  ]
+}

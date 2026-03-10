@@ -1,0 +1,11 @@
+# ML / HDF5 environment requirements only.
+# Do not install these into the ADS internal Python runtime.
+# The ADS orchestration layer uses normal Python plus the repository code.
+
+numpy>=1.24
+matplotlib>=3.8
+h5py>=3.10
+scikit-rf>=1.2
+tqdm>=4.66
+pandas>=2.2
+torch>=2.2

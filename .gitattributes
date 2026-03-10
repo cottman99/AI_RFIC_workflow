@@ -1,0 +1,24 @@
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+*.h5 binary
+*.pth binary
+*.ds binary
+*.dbw binary
+*.sab binary
+*.msh binary
+*.xml text
+*.s1p text
+*.s2p text
+*.s3p text
+*.s4p text
+*.s5p text
+*.s6p text
+
