@@ -34,6 +34,17 @@ The launcher falls back to:
 
 Users should prefer the stable launcher instead of importing variant-specific GUI scripts directly.
 
+## Recommended Runtime
+
+Run this directory with a normal desktop Python environment that includes `tkinter`.
+
+Good choices:
+
+- a standard Windows Python installation
+- a Conda environment with `numpy`, `matplotlib`, and `tkinter`
+
+Do not use the ADS internal Python runtime for these GUI scripts.
+
 ## Outputs
 
 The generator produces layout JSON files that contain:

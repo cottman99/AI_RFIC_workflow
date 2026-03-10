@@ -136,6 +136,28 @@ Packages expected in this environment:
 - `pandas`
 - `torch`
 
+## C. Layout Generator GUI Environment
+
+The layout generator GUI under `Data_process/JSON_layout_create/` should run in a normal desktop Python environment that includes:
+
+- `tkinter`
+- `numpy`
+- `matplotlib`
+
+This can be:
+
+- a regular system Python on Windows
+- a standard Conda environment
+- the same non-ADS environment you use for HDF5 / ML work, if it already includes `tkinter`
+
+Do not use the ADS internal Python for this GUI layer.
+
+Important:
+
+- the validated ADS Python runtime used by the automation flow does not include `tkinter`
+- the GUI scripts are for preparing JSON layout templates, not for running ADS worker tasks
+- if `import tkinter` fails, switch to a regular desktop Python environment before launching `layout_generator_main.py`
+
 ## PDK And Config Preparation
 
 For the ADS batch flow, start from:
