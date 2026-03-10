@@ -18,8 +18,8 @@ The current recommended GUI target is:
 
 The launcher falls back to:
 
-- `layout_generator_gui_enhanced.py`
-- `layout_generator_gui.py`
+- `legacy_variants/layout_generator_gui_enhanced.py`
+- `legacy_variants/layout_generator_gui.py`
 
 Users should prefer the stable launcher instead of importing variant-specific GUI scripts directly.
 
@@ -36,6 +36,7 @@ These JSON files are the expected inputs for the ADS automation flow in `paralle
 ## Directory Notes
 
 - `JSON_layout_data/`: sample and historical layout JSON assets
+- `legacy_variants/`: archived baseline and enhanced GUI variants
 - `tmp/`: local runtime artifacts, ignored by Git
 
 ## Testing Notes

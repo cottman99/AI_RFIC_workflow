@@ -13,8 +13,6 @@ import numpy as np
 SCRIPT_DIR = Path(__file__).resolve().parent
 if str(SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPT_DIR))
-
-
 MODULE_NAME = "layout_generator_gui_enhanced"
 
 

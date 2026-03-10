@@ -179,7 +179,7 @@
 - `Pytorch_Model/src/model.py`
 - `Pytorch_Model/src/tools/README.md`
 - `Data_process/JSON_layout_create/layout_generator_gui_guide.md`
-- `Data_process/JSON_layout_create/test_enhanced_features.py`
+- `Data_process/JSON_layout_create/legacy_variants/test_enhanced_features.py`
 - `Data_process/JSON_layout_create/test_super_enhanced_features.py`
 
 这会直接影响：

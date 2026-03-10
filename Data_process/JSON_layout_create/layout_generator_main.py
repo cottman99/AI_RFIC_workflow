@@ -9,8 +9,8 @@ def resolve_primary_gui(base_dir: Path) -> Path:
     """Pick the current primary GUI script from the ASCII entry modules."""
     candidates = [
         base_dir / "layout_generator_gui_super_enhanced.py",
-        base_dir / "layout_generator_gui_enhanced.py",
-        base_dir / "layout_generator_gui.py",
+        base_dir / "legacy_variants" / "layout_generator_gui_enhanced.py",
+        base_dir / "legacy_variants" / "layout_generator_gui.py",
     ]
     for candidate in candidates:
         if candidate.exists():
