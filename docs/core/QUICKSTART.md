@@ -38,6 +38,8 @@ From the repository root:
 python .\parallel_version\batch_processor.py process-config --config .\parallel_version\config_examples\batch_config_pdk.json
 ```
 
+When prompted with `Proceed with execution? [Y/n]:`, answer `Y`.
+
 This will:
 
 1. create or open the target workspace
@@ -54,7 +56,7 @@ Recommended first-time behavior:
 
 ## Quickstart C: Build HDF5 From Simulation Results
 
-After the ADS flow produces `.sNp` files, create an HDF5 dataset.
+After the ADS flow produces `.sNp` files, switch to the ML environment and create an HDF5 dataset.
 
 From the repository root:
 
@@ -63,10 +65,11 @@ python .\Data_process\HDF5_create\create_hdf5.py --json_dir .\parallel_version\c
 ```
 
 This groups compatible layouts and S-parameter files into HDF5 datasets.
+Only valid Touchstone files with readable frequency data are included.
 
 ## Quickstart D: Train A Model
 
-After you have an HDF5 dataset, move to the ML environment and train a checkpoint.
+After you have an HDF5 dataset, stay in the ML environment and train a checkpoint.
 
 From `Pytorch_Model/src/`:
 
@@ -77,6 +80,8 @@ python train.py --hdf5_path "<path-to-your-dataset.h5>" --epochs 5 --batch_size 
 If you prefer to keep datasets under `Pytorch_Model/data/`, point `--hdf5_path` there explicitly.
 
 ## Quickstart E: Verify A Trained Model
+
+Stay in the ML environment.
 
 From `Pytorch_Model/src/`:
 

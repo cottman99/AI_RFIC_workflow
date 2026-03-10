@@ -584,6 +584,13 @@ def run_em_simulation_only_task(task_data):
             if export_config.get('export_touchstone'):
                 touchstone_file = export_path / f"{cell_name}.s2p"
                 results.write(str(touchstone_file), "touchstone", 6)
+                if not touchstone_has_frequency_data(touchstone_file):
+                    error_msg = f"Simulation exported invalid Touchstone file with no frequency data: {touchstone_file}"
+                    logger.error(error_msg)
+                    return {
+                        'success': False,
+                        'message': error_msg
+                    }
                 logger.info(f"Exported touchstone file: {touchstone_file}")
                 export_results['touchstone'] = str(touchstone_file)
             
@@ -614,6 +621,31 @@ def run_em_simulation_only_task(task_data):
             'success': False,
             'message': error_msg
         }
+
+
+def touchstone_has_frequency_data(filepath):
+    """Return True when a Touchstone export contains at least one numeric data row."""
+    path = Path(filepath)
+    if not path.exists():
+        return False
+
+    try:
+        with path.open('r', encoding='utf-8', errors='ignore') as f:
+            for raw_line in f:
+                line = raw_line.strip()
+                if not line or line.startswith('!') or line.startswith('#'):
+                    continue
+
+                first_token = line.split()[0]
+                try:
+                    float(first_token)
+                    return True
+                except ValueError:
+                    continue
+    except Exception:
+        return False
+
+    return False
 
 # Import utility functions from original worker
 # These functions are copied from the original subprocess_worker.py
