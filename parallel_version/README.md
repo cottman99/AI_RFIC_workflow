@@ -51,7 +51,7 @@ Important behavior:
 - relative paths in `batch_config_pdk.json` are resolved relative to the config file itself
 - this makes the bundled sample config safer for new users
 
-See [CONFIG_REFERENCE.md](../docs/CONFIG_REFERENCE.md).
+See [CONFIG_REFERENCE.md](../docs/core/CONFIG_REFERENCE.md).
 
 ## Prerequisites
 
@@ -71,5 +71,5 @@ python .\parallel_version\batch_processor.py validate-config --config .\parallel
 
 Then continue with:
 
-- [SETUP.md](../docs/SETUP.md)
-- [QUICKSTART.md](../docs/QUICKSTART.md)
+- [SETUP.md](../docs/core/SETUP.md)
+- [QUICKSTART.md](../docs/core/QUICKSTART.md)

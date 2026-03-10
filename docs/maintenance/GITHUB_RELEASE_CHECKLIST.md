@@ -24,9 +24,9 @@ Use this checklist to turn the current research repository into a clean public r
 ## 4. Documentation
 
 - keep the root `README.md` accurate
-- keep `docs/ARCHITECTURE.md` and `docs/WORKFLOW.md` aligned with code
-- keep `docs/ENVIRONMENTS.md` aligned with validated interpreters
-- keep `docs/RUNTIME_VALIDATION_RESULTS.md` aligned with real validation evidence
+- keep `docs/core/ARCHITECTURE.md` and `docs/core/WORKFLOW.md` aligned with code
+- keep `docs/reference/ENVIRONMENTS.md` aligned with validated interpreters
+- keep `docs/maintenance/RUNTIME_VALIDATION_RESULTS.md` aligned with real validation evidence
 
 ## 5. Data And Model Assets
 

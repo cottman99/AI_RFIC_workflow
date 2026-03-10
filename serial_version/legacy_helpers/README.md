@@ -28,4 +28,4 @@ and may reference files in the parent `serial_version/` directory.
 New users should ignore this directory and start from:
 
 - `../README.md`
-- `../../docs/QUICKSTART.md`
+- `../../docs/core/QUICKSTART.md`

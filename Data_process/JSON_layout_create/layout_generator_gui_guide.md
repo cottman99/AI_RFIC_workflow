@@ -48,4 +48,4 @@ New users should not start from those files directly.
 
 ## Public Repository Note
 
-These GUI scripts are retained as historical utilities. They are useful for preparing JSON layout templates, but they are not the primary public entry point of the repository. New users should start with the root `README.md`, then continue with `docs/SETUP.md` and `docs/QUICKSTART.md`.
+These GUI scripts are retained as historical utilities. They are useful for preparing JSON layout templates, but they are not the primary public entry point of the repository. New users should start with the root `README.md`, then continue with `docs/core/SETUP.md` and `docs/core/QUICKSTART.md`.

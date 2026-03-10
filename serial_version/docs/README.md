@@ -13,10 +13,10 @@ This directory is retained as internal engineering reference material.
 Read the root repository documents first:
 
 1. `../../README.md`
-2. `../../docs/ARCHITECTURE.md`
-3. `../../docs/WORKFLOW.md`
-4. `../../docs/PROJECT_HEALTH_REPORT.md`
-5. `../../docs/VALIDATION_PLAN.md`
+2. `../../docs/core/ARCHITECTURE.md`
+3. `../../docs/core/WORKFLOW.md`
+4. `../../docs/maintenance/PROJECT_HEALTH_REPORT.md`
+5. `../../docs/maintenance/VALIDATION_PLAN.md`
 
 Then use the files in this directory only when you need deeper implementation detail.
 
@@ -34,4 +34,3 @@ These files may contain:
 - historical implementation assumptions
 - legacy paths and examples
 - internal engineering detail that is too deep for public-facing onboarding
-

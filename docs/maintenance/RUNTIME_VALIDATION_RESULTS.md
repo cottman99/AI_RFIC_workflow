@@ -101,7 +101,7 @@ It is not compatible with the current 2-channel datasets and should remain a loc
 
 See:
 
-- [MODEL_DATA_COMPATIBILITY.md](MODEL_DATA_COMPATIBILITY.md)
+- [MODEL_DATA_COMPATIBILITY.md](../reference/MODEL_DATA_COMPATIBILITY.md)
 
 ## Local Replacement Checkpoint
 

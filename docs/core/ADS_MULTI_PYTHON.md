@@ -189,8 +189,8 @@ The most useful maintainer mental model is:
 
 ## Related Files
 
-- `docs/SETUP.md`
-- `docs/CONFIG_REFERENCE.md`
-- `docs/ARCHITECTURE.md`
+- `docs/core/SETUP.md`
+- `docs/core/CONFIG_REFERENCE.md`
+- `docs/core/ARCHITECTURE.md`
 - `parallel_version/subprocess_worker_parallel.py`
 - `serial_version/subprocess_worker.py`

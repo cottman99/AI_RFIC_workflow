@@ -36,7 +36,7 @@ Recommended characteristics:
 
 See:
 
-- [ENVIRONMENTS.md](../docs/ENVIRONMENTS.md)
+- [ENVIRONMENTS.md](../docs/reference/ENVIRONMENTS.md)
 
 ## Quick Start
 
@@ -100,9 +100,9 @@ Use the date-stamped filename only when referring to the specific local validati
 
 See:
 
-- [MODEL_DATA_COMPATIBILITY.md](../docs/MODEL_DATA_COMPATIBILITY.md)
-- [RETRAIN_2CH_CHECKPOINT.md](../docs/RETRAIN_2CH_CHECKPOINT.md)
-- [ENVIRONMENTS.md](../docs/ENVIRONMENTS.md)
+- [MODEL_DATA_COMPATIBILITY.md](../docs/reference/MODEL_DATA_COMPATIBILITY.md)
+- [RETRAIN_2CH_CHECKPOINT.md](../docs/maintenance/RETRAIN_2CH_CHECKPOINT.md)
+- [ENVIRONMENTS.md](../docs/reference/ENVIRONMENTS.md)
 
 ## Smoke-Test Status
 

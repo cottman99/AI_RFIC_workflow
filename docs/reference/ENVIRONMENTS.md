@@ -106,6 +106,6 @@ Use these rules unless you have a strong reason not to:
 
 Machine-specific validated examples remain documented in:
 
-- [RUNTIME_VALIDATION_RESULTS.md](RUNTIME_VALIDATION_RESULTS.md)
+- [RUNTIME_VALIDATION_RESULTS.md](../maintenance/RUNTIME_VALIDATION_RESULTS.md)
 
 That document is evidence of what worked on one validated machine, not a requirement that users copy those exact environment names or paths.

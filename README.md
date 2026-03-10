@@ -29,12 +29,16 @@ See:
 
 If you are new to the repository, read these in order:
 
-1. [SETUP.md](docs/SETUP.md)
-2. [QUICKSTART.md](docs/QUICKSTART.md)
-3. [CONFIG_REFERENCE.md](docs/CONFIG_REFERENCE.md)
-4. [WORKFLOW.md](docs/WORKFLOW.md)
-5. [ARCHITECTURE.md](docs/ARCHITECTURE.md)
-6. [ADS_MULTI_PYTHON.md](docs/ADS_MULTI_PYTHON.md)
+1. [SETUP.md](docs/core/SETUP.md)
+2. [QUICKSTART.md](docs/core/QUICKSTART.md)
+3. [CONFIG_REFERENCE.md](docs/core/CONFIG_REFERENCE.md)
+4. [WORKFLOW.md](docs/core/WORKFLOW.md)
+5. [ARCHITECTURE.md](docs/core/ARCHITECTURE.md)
+6. [ADS_MULTI_PYTHON.md](docs/core/ADS_MULTI_PYTHON.md)
+
+Full documentation map:
+
+- [docs/README.md](docs/README.md)
 
 ## Repository Structure
 
@@ -107,7 +111,7 @@ Important:
 - ADS-internal Python is only for Keysight modules invoked by the automation layer
 - `requirements.txt` is for the HDF5 / ML environment
 
-See [ENVIRONMENTS.md](docs/ENVIRONMENTS.md).
+See [ENVIRONMENTS.md](docs/reference/ENVIRONMENTS.md).
 
 ## What Has Been Validated
 
@@ -121,9 +125,9 @@ Validated on March 10, 2026:
 
 Validation evidence and compatibility notes:
 
-- [RUNTIME_VALIDATION_RESULTS.md](docs/RUNTIME_VALIDATION_RESULTS.md)
-- [MODEL_DATA_COMPATIBILITY.md](docs/MODEL_DATA_COMPATIBILITY.md)
-- [RETRAIN_2CH_CHECKPOINT.md](docs/RETRAIN_2CH_CHECKPOINT.md)
+- [RUNTIME_VALIDATION_RESULTS.md](docs/maintenance/RUNTIME_VALIDATION_RESULTS.md)
+- [MODEL_DATA_COMPATIBILITY.md](docs/reference/MODEL_DATA_COMPATIBILITY.md)
+- [RETRAIN_2CH_CHECKPOINT.md](docs/maintenance/RETRAIN_2CH_CHECKPOINT.md)
 
 ## Key Constraints
 
@@ -131,11 +135,9 @@ Validation evidence and compatibility notes:
 - large HDF5 datasets and model checkpoints are intentionally not tracked by Git
 - a historical 1-channel checkpoint exists only as a local legacy artifact and should not be treated as the canonical current model
 
-## Other Documents
+## Additional Documentation
 
-- [GLOSSARY.md](docs/GLOSSARY.md)
-- [DATA_AND_MODEL_ASSETS.md](docs/DATA_AND_MODEL_ASSETS.md)
-- [PROJECT_HEALTH_REPORT.md](docs/PROJECT_HEALTH_REPORT.md)
-- [GITHUB_RELEASE_CHECKLIST.md](docs/GITHUB_RELEASE_CHECKLIST.md)
-- [REFERENCE_MAP.md](docs/REFERENCE_MAP.md)
-- [ADS_MULTI_PYTHON.md](docs/ADS_MULTI_PYTHON.md)
+- [Documentation Map](docs/README.md)
+- [Glossary](docs/core/GLOSSARY.md)
+- [Data And Model Assets](docs/reference/DATA_AND_MODEL_ASSETS.md)
+- [Runtime Validation Results](docs/maintenance/RUNTIME_VALIDATION_RESULTS.md)

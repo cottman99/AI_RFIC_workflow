@@ -10,7 +10,7 @@ The `serial_version/docs/` directory is retained as internal engineering referen
 
 ## Public to Internal Mapping
 
-### `docs/ARCHITECTURE.md`
+### `docs/core/ARCHITECTURE.md`
 
 Use this first for:
 
@@ -24,7 +24,7 @@ Deep internal references:
 - `serial_version/docs/03-subprocess-architecture.md`
 - `serial_version/docs/07-configuration-management.md`
 
-### `docs/WORKFLOW.md`
+### `docs/core/WORKFLOW.md`
 
 Use this first for:
 
@@ -38,7 +38,7 @@ Deep internal references:
 - `serial_version/docs/02-ads-api-integration.md`
 - `serial_version/docs/08-visualization-results.md`
 
-### `docs/GLOSSARY.md`
+### `docs/core/GLOSSARY.md`
 
 Use this first for:
 
@@ -49,7 +49,7 @@ Deep internal references:
 - `serial_version/docs/04-json-layout-schema.md`
 - `serial_version/docs/07-configuration-management.md`
 
-### `docs/PROJECT_HEALTH_REPORT.md`
+### `docs/maintenance/PROJECT_HEALTH_REPORT.md`
 
 Use this first for:
 
@@ -61,7 +61,7 @@ Related internal references:
 - `serial_version/docs/06-error-handling.md`
 - `serial_version/docs/07-configuration-management.md`
 
-### `docs/VALIDATION_PLAN.md`
+### `docs/maintenance/VALIDATION_PLAN.md`
 
 Use this first for:
 
@@ -79,9 +79,8 @@ Related internal references:
 For a new maintainer:
 
 1. `README.md`
-2. `docs/ARCHITECTURE.md`
-3. `docs/WORKFLOW.md`
-4. `docs/PROJECT_HEALTH_REPORT.md`
-5. `docs/VALIDATION_PLAN.md`
+2. `docs/core/ARCHITECTURE.md`
+3. `docs/core/WORKFLOW.md`
+4. `docs/maintenance/PROJECT_HEALTH_REPORT.md`
+5. `docs/maintenance/VALIDATION_PLAN.md`
 6. selected files from `serial_version/docs/` only when deeper implementation detail is required
-
