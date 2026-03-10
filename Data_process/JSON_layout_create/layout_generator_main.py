@@ -6,17 +6,16 @@ import runpy
 
 
 def resolve_primary_gui(base_dir: Path) -> Path:
-    """Pick the most feature-complete GUI script without hard-coding a localized filename."""
+    """Pick the current primary GUI script from the ASCII entry modules."""
     candidates = [
-        path
-        for path in base_dir.glob("RFIC*.py")
-        if path.name != Path(__file__).name and not path.name.startswith("test_")
+        base_dir / "layout_generator_gui_super_enhanced.py",
+        base_dir / "layout_generator_gui_enhanced.py",
+        base_dir / "layout_generator_gui.py",
     ]
-    if not candidates:
-        raise FileNotFoundError("No RFIC layout generator GUI script was found.")
-
-    # The current primary implementation is the largest GUI script in this directory.
-    return max(candidates, key=lambda path: path.stat().st_size)
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    raise FileNotFoundError("No layout generator GUI script was found.")
 
 
 def main() -> None:

@@ -12,9 +12,16 @@ This launcher exists to give the repository a stable ASCII-named entry point.
 
 ## Current Recommended GUI Variant
 
-The current recommended GUI target is the most feature-complete historical variant in this directory.
+The current recommended GUI target is:
 
-The launcher selects the preferred implementation automatically, so users do not need to invoke the Chinese-named GUI files directly.
+- `layout_generator_gui_super_enhanced.py`
+
+The launcher falls back to:
+
+- `layout_generator_gui_enhanced.py`
+- `layout_generator_gui.py`
+
+Users should prefer the stable launcher instead of importing variant-specific GUI scripts directly.
 
 ## Outputs
 
