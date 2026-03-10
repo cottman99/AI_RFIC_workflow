@@ -11,7 +11,7 @@ import sys
 
 # 从本地文件中导入我们定义的类
 if __package__ in (None, ""):
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 
 from dataset import EM_HDF5_Dataset
 from model import AdaptableEM_CNN

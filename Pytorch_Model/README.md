@@ -15,7 +15,10 @@ Main entry points:
 
 - `src/train.py`
 - `src/tools/verify_model.py`
-- `src/tools/verify_model_gui.py`
+
+Optional experimental helper:
+
+- `src/tools/experimental_gui/verify_model_gui.py`
 
 ## Recommended Python Environment
 

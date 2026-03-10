@@ -7,6 +7,7 @@ This directory contains archived GUI variants that are no longer part of the pri
 - `layout_generator_gui.py`: baseline GUI variant
 - `layout_generator_gui_enhanced.py`: enhanced GUI variant
 - `test_enhanced_features.py`: historical smoke test for the enhanced variant
+- `test_super_enhanced_features.py`: historical smoke test for the super-enhanced variant
 
 ## Repository Position
 

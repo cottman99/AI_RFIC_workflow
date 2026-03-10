@@ -130,13 +130,17 @@ Input:
 Tooling:
 
 - `Pytorch_Model/src/tools/verify_model.py`
-- `Pytorch_Model/src/tools/verify_model_gui.py`
+
+Optional experimental helper:
+
+- `Pytorch_Model/src/tools/experimental_gui/verify_model_gui.py`
 
 Actions:
 
 - run inference on selected samples
 - compare predicted and true S-parameter responses
 - inspect plots and error metrics
+- optionally use the experimental GUI wrapper for ad-hoc local inspection
 
 Output:
 
@@ -168,4 +172,3 @@ End-to-end runtime validation requires:
 - simulation outputs are runtime artifacts and should not be committed
 - training datasets and model weights should not be committed by default
 - some historical files reflect the original development machine and require cleanup before publication
-

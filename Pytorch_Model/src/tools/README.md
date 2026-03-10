@@ -5,9 +5,13 @@ This directory contains the model verification utilities for the PyTorch stage.
 ## Scripts
 
 - `verify_model.py`: CLI verification and plotting
-- `verify_model_gui.py`: GUI wrapper for interactive verification
+- `experimental_gui/verify_model_gui.py`: archived GUI wrapper for interactive verification
 
-Both tools now support:
+The recommended public tool is the CLI verifier.
+
+The GUI helper is retained as an experimental convenience tool and is no longer part of the main onboarding path.
+
+The CLI tool supports:
 
 - direct script execution
 - module execution with `python -m`
@@ -44,3 +48,7 @@ Data_process/JSON_layout_create/tmp/hdf5/large_set/dataset_2port_16x16.h5
 ```
 
 Do not use that legacy checkpoint with the current 2-channel dataset in `Pytorch_Model/data/`.
+
+For the optional experimental GUI helper, see:
+
+- `experimental_gui/README.md`

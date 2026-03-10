@@ -35,7 +35,7 @@
 
 - 负责将 JSON 布局和 `.sNp` 仿真结果对齐为 HDF5
 - 核心脚本职责单一，适合保留
-- 自带 `verify_hdf5.py` 和 `validate_snp_files.py`，对后续数据治理有帮助
+- 自带 `utils/verify_hdf5.py` 和 `utils/validate_snp_files.py`，对后续数据治理有帮助
 
 ### 2.2 serial_version
 
@@ -180,7 +180,7 @@
 - `Pytorch_Model/src/tools/README.md`
 - `Data_process/JSON_layout_create/layout_generator_gui_guide.md`
 - `Data_process/JSON_layout_create/legacy_variants/test_enhanced_features.py`
-- `Data_process/JSON_layout_create/test_super_enhanced_features.py`
+- `Data_process/JSON_layout_create/legacy_variants/test_super_enhanced_features.py`
 
 这会直接影响：
 
