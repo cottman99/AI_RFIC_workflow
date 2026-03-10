@@ -7,6 +7,10 @@ import re
 import os
 from pathlib import Path
 
+
+HELPER_DIR = Path(__file__).resolve().parent
+SERIAL_ROOT = HELPER_DIR.parent
+
 def fix_unicode_in_file(file_path):
     """Replace Unicode characters with ASCII equivalents"""
     
@@ -55,15 +59,15 @@ def fix_all_files():
         'test_batch.py',
         'subprocess_gui.py'
     ]
-    
-    current_dir = Path(__file__).parent
+
+    current_dir = SERIAL_ROOT
     
     for filename in files_to_fix:
         file_path = current_dir / filename
         if file_path.exists():
             fix_unicode_in_file(file_path)
         else:
-            print(f"File not found: {filename}")
+            print(f"File not found in serial_version root: {filename}")
 
 if __name__ == "__main__":
     print("Fixing Unicode encoding issues...")

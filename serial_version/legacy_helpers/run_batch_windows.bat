@@ -12,13 +12,17 @@ set PYTHONUTF8=1
 REM Set console code page to UTF-8
 chcp 65001 >nul
 
+set SCRIPT_DIR=%~dp0
+set SERIAL_ROOT=%SCRIPT_DIR%..
+set CONFIG_FILE=%SERIAL_ROOT%\batch_config.json
+
 REM Check if config file exists
-if exist "batch_config.json" (
-    echo Using configuration: batch_config.json
-    python -X utf8 batch_processor_ascii.py --config "batch_config.json"
+if exist "%CONFIG_FILE%" (
+    echo Using configuration: %CONFIG_FILE%
+    python -X utf8 "%SCRIPT_DIR%batch_processor_ascii.py" --config "%CONFIG_FILE%"
 ) else (
     echo Configuration file not found, using defaults...
-    python -X utf8 batch_processor_ascii.py --json-dir "./json_layout" --workspace "./batch_results"
+    python -X utf8 "%SCRIPT_DIR%batch_processor_ascii.py" --json-dir "%SERIAL_ROOT%\json_layout" --workspace "%SERIAL_ROOT%\batch_results"
 )
 
 echo.

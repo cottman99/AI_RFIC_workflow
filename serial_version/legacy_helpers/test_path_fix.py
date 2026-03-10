@@ -10,15 +10,19 @@ import sys
 import json
 from pathlib import Path
 
+
+HELPER_DIR = Path(__file__).resolve().parent
+SERIAL_ROOT = HELPER_DIR.parent
+
 def test_path_resolution():
     """Test path resolution fixes"""
     
     print("=== Path Fix Validation ===\n")
     
     # Test configuration
-    config_path = Path("batch_config.json")
+    config_path = SERIAL_ROOT / "batch_config.json"
     if not config_path.exists():
-        print("[ERROR] batch_config.json not found")
+        print(f"[ERROR] batch_config.json not found: {config_path}")
         return False
     
     # Load configuration
@@ -103,7 +107,7 @@ def test_path_resolution():
             print(f"     - {f.name}")
     
     # Check expected path
-    expected_path = Path.cwd() / "batch_workflow" / "batch_results"
+    expected_path = SERIAL_ROOT / "batch_workflow" / "batch_results"
     print(f"   Expected path: {expected_path}")
     print(f"   Expected exists: {expected_path.exists()}")
     
@@ -126,10 +130,10 @@ def show_recommendation():
     print(f"4. [TODO] Verify that file counting works correctly with the new paths")
     
     print(f"\n[COMMAND] Test command:")
-    print(f"   python batch_processor_ascii.py --config batch_config.json")
+    print(f"   python legacy_helpers/batch_processor_ascii.py --config ../batch_config.json")
     
     print(f"\n[PATH] Expected output location:")
-    expected_path = Path.cwd() / "batch_workflow" / "batch_results"
+    expected_path = SERIAL_ROOT / "batch_workflow" / "batch_results"
     print(f"   {expected_path}")
 
 if __name__ == "__main__":

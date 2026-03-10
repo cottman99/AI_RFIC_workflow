@@ -5,7 +5,7 @@ ASCII-only Batch Processor for JSON Layout to EM Simulation
 This version uses only ASCII characters to avoid Windows encoding issues.
 
 Usage:
-    python batch_processor_ascii.py --config batch_config.json
+    python batch_processor_ascii.py --config ../batch_config.json
     python batch_processor_ascii.py --json-dir ./layouts --workspace ./batch_results
 """
 
@@ -18,6 +18,10 @@ import logging
 from pathlib import Path
 import time
 from typing import Dict, List, Any
+
+
+HELPER_DIR = Path(__file__).resolve().parent
+SERIAL_ROOT = HELPER_DIR.parent
 
 class BatchProcessorASCII:
     """Batch processing engine with ASCII-only output"""
@@ -86,7 +90,7 @@ class BatchProcessorASCII:
             "pdk_loc": "path/to/pdk",
             "pdk_tech_loc": "path/to/pdk_tech",
             "substrate": "demo",
-            "layer_mapping": "./default_layer_mapping.json",
+            "layer_mapping": str(SERIAL_ROOT / "default_layer_mapping.json"),
             "export_types": ["touchstone", "csv"],
             "export_path": "./batch_results",
             "max_workers": 1,
@@ -201,7 +205,7 @@ class BatchProcessorASCII:
             # Build CLI command
             cmd = [
                 sys.executable,
-                str(Path(__file__).parent / "subprocess_cli.py"),
+                str(SERIAL_ROOT / "subprocess_cli.py"),
                 "complete",
                 "--json", job_config["json_file"],
                 "--workspace", job_config["workspace_dir"],

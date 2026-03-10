@@ -11,6 +11,7 @@ It remains useful for:
 - recovering historical design decisions
 - comparing older CLI/GUI behavior
 - mining internal engineering documentation
+- accessing archived compatibility helpers under `legacy_helpers/`
 
 ## What It Is Not
 
@@ -30,6 +31,10 @@ Compared with `parallel_version/`, this directory contains more historical compa
 - `subprocess_worker.py`
 - `batch_processor.py`
 - `docs/`
+
+Historical compatibility wrappers and one-off maintenance scripts live under:
+
+- `legacy_helpers/`
 
 For deeper internal reference, start with:
 

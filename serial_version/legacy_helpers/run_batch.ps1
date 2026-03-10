@@ -9,14 +9,18 @@ Write-Host "=== EM Simulation Batch Processor ===" -ForegroundColor Green
 $env:PYTHONIOENCODING = "utf-8"
 $env:PYTHONUTF8 = "1"
 
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$serialRoot = Resolve-Path (Join-Path $scriptDir "..")
+
 # Check if config file exists
-$configFile = "batch_config.json"
+$configFile = Join-Path $serialRoot "batch_config.json"
+$asciiProcessor = Join-Path $scriptDir "batch_processor_ascii.py"
 if (Test-Path $configFile) {
     Write-Host "Using configuration: $configFile" -ForegroundColor Yellow
-    python -X utf8 batch_processor_ascii.py --config $configFile
+    python -X utf8 $asciiProcessor --config $configFile
 } else {
     Write-Host "Configuration file not found, using defaults..." -ForegroundColor Yellow
-    python -X utf8 batch_processor_ascii.py --json-dir "./json_layout" --workspace "./batch_results"
+    python -X utf8 $asciiProcessor --json-dir (Join-Path $serialRoot "json_layout") --workspace (Join-Path $serialRoot "batch_results")
 }
 
 Write-Host "=== Batch processing complete ===" -ForegroundColor Green
